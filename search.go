@@ -30,7 +30,7 @@ func addSearchQueryParams(query SearchQuery) *url.Values {
 	if query.CQLContext != "" {
 		data.Set("cqlcontext", query.CQLContext)
 	}
-	if query.Excerpt != "" {
+	if query.Expand != "" {
 		data.Set("expand", query.Expand)
 	}
 	if query.IncludeArchivedSpaces == true {
