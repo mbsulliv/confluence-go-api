@@ -1,9 +1,9 @@
 # confluence-go-api
 
-[![GoDoc](https://img.shields.io/badge/godoc-reference-green.svg)](https://godoc.org/github.com/cseeger-epages/confluence-go-api)
-[![Go Report Card](https://goreportcard.com/badge/github.com/cseeger-epages/confluence-go-api)](https://goreportcard.com/report/github.com/cseeger-epages/confluence-go-api)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/cseeger-epages/confluence-go-api/blob/master/LICENSE)
-[![Build Status](https://travis-ci.org/cseeger-epages/confluence-go-api.svg?branch=master)](https://travis-ci.org/cseeger-epages/confluence-go-api)
+[![GoDoc](https://img.shields.io/badge/godoc-reference-green.svg)](https://godoc.org/github.com/mbsulliv/confluence-go-api)
+[![Go Report Card](https://goreportcard.com/badge/github.com/mbsulliv/confluence-go-api)](https://goreportcard.com/report/github.com/mbsulliv/confluence-go-api)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/mbsulliv/confluence-go-api/blob/master/LICENSE)
+[![Build Status](https://travis-ci.org/mbsulliv/confluence-go-api.svg?branch=master)](https://travis-ci.org/mbsulliv/confluence-go-api)
 [![Built with Mage](https://magefile.org/badge.svg)](https://magefile.org)
 
 
@@ -24,7 +24,7 @@ If you miss some feature implementation, feel free to open an issue or send pull
 If you already installed GO on your system and configured it properly than its simply:
 
 ```
-go get github.com/cseeger-epages/confluence-go-api
+go get github.com/mbsulliv/confluence-go-api
 ```
 
 If not follow [these instructions](https://nats.io/documentation/tutorials/go-install/).
@@ -40,7 +40,7 @@ import (
   "fmt"
   "log"
 
-  "github.com/cseeger-epages/confluence-go-api"
+  "github.com/mbsulliv/confluence-go-api"
 )
 
 func main() {
@@ -62,16 +62,16 @@ func main() {
 
 ### Advanced examples
 
-see [examples](https://github.com/cseeger-epages/confluence-go-api/tree/master/examples) for some more usage examples
+see [examples](https://github.com/mbsulliv/confluence-go-api/tree/master/examples) for some more usage examples
 
 ## Code Documentation
 
-You find the full [code documentation here](https://godoc.org/github.com/cseeger-epages/confluence-go-api).
+You find the full [code documentation here](https://godoc.org/github.com/mbsulliv/confluence-go-api).
 
 The Confluence API documentation [can be found here](https://docs.atlassian.com/ConfluenceServer/rest/6.9.1/).
 
 ## Contribution
 
 Thank you for participating to this project.
-Please see our [Contribution Guidlines](https://github.com/cseeger-epages/confluence-go-api/blob/master/CONTRIBUTING.md) for more information.
+Please see our [Contribution Guidlines](https://github.com/mbsulliv/confluence-go-api/blob/master/CONTRIBUTING.md) for more information.
 
