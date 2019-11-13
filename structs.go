@@ -101,7 +101,7 @@ type Search struct {
 type SearchQuery struct {
 	CQL                   string
 	CQLContext            string
-	Excerpt               string
+	Expand                string
 	IncludeArchivedSpaces bool
 	Limit                 int
 	Start                 int
