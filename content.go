@@ -47,7 +47,7 @@ func (a *API) GetContent(query ContentQuery) (*Search, error) {
 }
 
 // GetChildPages returns a content list of child page objects
-func (a *API) GetChildPages(id string, query ContentQuery) (*Search, error) {
+func (a *API) GetChildPages(id string, query SearchQuery) (*Search, error) {
 	ep, err := a.getContentChildEndpoint(id, "page")
 	if err != nil {
 		return nil, err
