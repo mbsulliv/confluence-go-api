@@ -149,14 +149,14 @@ func (a *API) SendChildSearchRequest(ep *url.URL, method string) (*Search, error
 		return nil, err
 	}
 
-	var search SearchChildPage
+	var search Search
 
 	err = json.Unmarshal(res, &search)
 	if err != nil {
 		return nil, err
 	}
 
-	return &search.Page, nil
+	return &search, nil
 }
 
 // SendHistoryRequest requests history
