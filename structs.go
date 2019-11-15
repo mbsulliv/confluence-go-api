@@ -14,6 +14,7 @@ type API struct {
 
 // Results array
 type Results struct {
+	ID      string  `json:"id"`
 	Content Content `json:"content"`
 	Excerpt string  `json:"excerpt,omitempty"`
 	Title   string  `json:"title,omitempty"`
