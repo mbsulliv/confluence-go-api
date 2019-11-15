@@ -89,6 +89,11 @@ type User struct {
 }
 
 // Search results
+type SearchChildPage struct {
+	Page Search `json:"page"`
+}
+
+// Search results
 type Search struct {
 	Results []Results `json:"results"`
 	Start   int       `json:"start,omitempty"`

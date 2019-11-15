@@ -47,13 +47,13 @@ func (a *API) GetContent(query ContentQuery) (*Search, error) {
 }
 
 // GetChildPages returns a content list of child page objects
-func (a *API) GetChildPages(id string, query SearchQuery) (*Search, error) {
+func (a *API) GetChildPages(id string) (*Search, error) {
 	ep, err := a.getContentChildEndpoint(id, "page")
 	if err != nil {
 		return nil, err
 	}
-	ep.RawQuery = addSearchQueryParams(query).Encode()
-	return a.SendSearchRequest(ep, "GET")
+	reply := a.SendSearchRequest(ep, "GET")
+	return reply.Page
 }
 
 // GetComments returns a list of comments belonging to id
