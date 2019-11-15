@@ -136,6 +136,29 @@ func (a *API) SendSearchRequest(ep *url.URL, method string) (*Search, error) {
 	return &search, nil
 }
 
+// SendChildSearchRequest sends search related requests
+func (a *API) SendChildSearchRequest(ep *url.URL, method string) (*Search, error) {
+
+	req, err := http.NewRequest(method, ep.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	res, err := a.Request(req)
+	if err != nil {
+		return nil, err
+	}
+
+	var search SearchChildPage
+
+	err = json.Unmarshal(res, &search)
+	if err != nil {
+		return nil, err
+	}
+
+	return &search.Page, nil
+}
+
 // SendHistoryRequest requests history
 func (a *API) SendHistoryRequest(ep *url.URL, method string) (*History, error) {
 

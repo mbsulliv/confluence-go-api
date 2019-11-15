@@ -52,8 +52,7 @@ func (a *API) GetChildPages(id string) (*Search, error) {
 	if err != nil {
 		return nil, err
 	}
-	reply, err := a.SendSearchRequest(ep, "GET")
-	return reply.Page, err
+	return a.SendSearchRequest(ep, "GET")
 }
 
 // GetComments returns a list of comments belonging to id
