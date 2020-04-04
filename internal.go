@@ -9,7 +9,7 @@ import (
 
 // NewAPI implements API constructor
 func NewAPI(location string, username string, token string) (*API, error) {
-	if len(location) == 0
+	if len(location) == 0 {
 		return nil, errors.New("url empty")
 	}
 
