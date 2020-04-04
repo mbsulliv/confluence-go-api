@@ -14,11 +14,13 @@ type API struct {
 
 // Results array
 type Results struct {
-	ID      string  `json:"id"`
-	Content Content `json:"content"`
-	Excerpt string  `json:"excerpt,omitempty"`
-	Title   string  `json:"title,omitempty"`
-	URL     string  `json:"url,omitempty"`
+	ID           string          `json:"id"`
+	Content      Content         `json:"content"`
+	LastModified string          `json:"lastModified"`
+	Excerpt      string          `json:"excerpt,omitempty"`
+	Title        string          `json:"title,omitempty"`
+	URL          string          `json:"url,omitempty"`
+	Container    ResultContainer `json:"resultGlobalContainer,omitempty"`
 }
 
 // Content specifies content properties
@@ -31,6 +33,12 @@ type Content struct {
 	Body      Body       `json:"body"`
 	Version   Version    `json:"version"`
 	Space     Space      `json:"space"`
+}
+
+// ResultContainer specifies where the result resides (e.g. the space)
+type ResultContainer struct {
+	Title string `json:"title"`
+	URL   string `json:"displayUrl"`
 }
 
 // Ancestor defines ancestors to create sub pages
