@@ -100,10 +100,11 @@ type User struct {
 
 // Search results
 type Search struct {
-	Results []Results `json:"results"`
-	Start   int       `json:"start,omitempty"`
-	Limit   int       `json:"limit,omitempty"`
-	Size    int       `json:"size,omitempty"`
+	Results   []Results `json:"results"`
+	Start     int       `json:"start,omitempty"`
+	Limit     int       `json:"limit,omitempty"`
+	Size      int       `json:"size,omitempty"`
+	TotalSize int       `json:"totalSize,omitempty"`
 }
 
 // SearchQuery defines query parameters used for searchng
